@@ -148,6 +148,17 @@ footer{
     
 }
 
+.mapII {
+    transition: 1s;
+    transition-property: background-color;
+    transition-delay: ease;
+
+&:hover {
+    background-color: $clrII;
+    
+}
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
     .header {
         padding: 10px 0 10px 0;
