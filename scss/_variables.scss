@@ -1,0 +1,13 @@
+/*COLORES*/
+$clrI: black;
+$clrII: #0D324D;
+$clrIII: white;
+
+/*MEDIDAS*/
+$pxini: 40px;
+
+/*MIXIN*/
+@mixin tamaño($ancho, $alto) {
+    height: $ancho;
+    width: $alto;
+}

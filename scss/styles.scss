@@ -1,0 +1,191 @@
+@import "variables";
+
+*{
+    margin: 0;
+    padding: 0
+
+}
+
+
+body {
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    background-color: $clrI;
+    color: $clrIII;
+}
+header {
+    background-color: $clrII;  
+    max-width: 100%;
+    top: 0;
+    a{
+        color: $clrI;
+        text-decoration: none;
+    }
+}   
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+    div {
+        justify-content: space-between;
+        
+        img{
+            width: $pxini;
+        }
+}
+
+.logo {
+    margin: 0%;
+}
+
+.suscrib {
+    margin: $pxini -40 ;
+}
+
+.descrip {
+    transition: 1s;
+    transition-property: background-color;
+    transition-delay: ease;
+
+    &:hover {
+        background-color: $clrII;
+    
+    }
+}
+
+.banner {
+    width: 99.7%;
+    height: $pxini + 260;
+    margin: $pxini 0 $pxini 0;
+}
+.bannerdos img {
+    @include tamaño(16rem, 100rem);
+    margin-bottom: $pxini +100;
+}
+
+p{
+    font-size:large;
+    text-align: center;
+    margin-top:  $pxini;
+}
+
+.bdtrabj {
+    margin-top: $pxini;
+}
+
+
+footer{
+    color: $clrI;
+    margin-top: $pxini;
+    padding-top: $pxini;
+    padding-bottom: $pxini;
+    background-color: $clrI;
+    text-align: center;
+    animation-name: lastone;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    
+    img{
+        width: $pxini;
+        
+    }
+    a {
+            text-decoration: none;
+        }
+}
+.pagess:hover {
+    background-color: $clrII;
+    
+}
+
+@keyframes lastone{
+    0%{
+    }
+
+    25%{background-color: #3A506B;
+
+    }
+    50%{ background-color: #1C2541;
+
+    }
+    75%{ background-color: $clrII;
+    }
+
+    85%{
+        background-color: #1C2541;
+    }
+    
+    100%{
+        background-color: #3A506B;
+    }
+}
+
+
+.datos p{
+    margin:0%;
+    font-size: 1rem;
+    /* text-align: left; */
+}
+
+.form {
+    font-size: 20px;
+    background-color: #0D324D;
+    display: flex;
+    justify-content: center;
+}
+#form p{
+    text-align: left;
+}
+
+.carro{
+    margin-bottom: 100px;
+}
+
+.imgcard img {
+    width: $pxini +260;
+    
+    
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .header {
+        padding: 10px 0 10px 0;
+    }
+    .logo {
+        padding-left: 6px;
+    }
+    .imgtext p {
+        display:none;
+    }
+    .redes {
+        display: none;
+    }
+    .p {
+        font-size: small;
+    }
+}
+
+@media (min-width: 480px) {
+    .logo {
+    padding-left: 1rem;
+        }
+    .footer{
+        display: flex;  
+        justify-content: space-around;
+        margin: auto;
+    }
+    
+    }
+
+@media (min-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: large;
+    }
+    .header {
+        margin: 6px;
+    }
+
+}

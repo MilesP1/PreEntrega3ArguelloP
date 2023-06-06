@@ -1,0 +1,180 @@
+/*COLORES*/
+/*MEDIDAS*/
+/*MIXIN*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Cinzel", serif;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+}
+
+header {
+  background-color: #0D324D;
+  max-width: 100%;
+  top: 0;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div {
+  justify-content: space-between;
+}
+div img {
+  width: 40px;
+}
+
+.logo {
+  margin: 0%;
+}
+
+.suscrib {
+  margin: 40px -40;
+}
+
+.descrip {
+  transition: 1s;
+  transition-property: background-color;
+  transition-delay: ease;
+}
+.descrip:hover {
+  background-color: #0D324D;
+}
+
+.banner {
+  width: 99.7%;
+  height: 300px;
+  margin: 40px 0 40px 0;
+}
+
+.bannerdos img {
+  height: 16rem;
+  width: 100rem;
+  margin-bottom: 140px;
+}
+
+p {
+  font-size: large;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.bdtrabj {
+  margin-top: 40px;
+}
+
+footer {
+  color: black;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: black;
+  text-align: center;
+  animation-name: lastone;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+footer img {
+  width: 40px;
+}
+footer a {
+  text-decoration: none;
+}
+
+.pagess:hover {
+  background-color: #0D324D;
+}
+
+@keyframes lastone {
+  25% {
+    background-color: #3A506B;
+  }
+  50% {
+    background-color: #1C2541;
+  }
+  75% {
+    background-color: #0D324D;
+  }
+  85% {
+    background-color: #1C2541;
+  }
+  100% {
+    background-color: #3A506B;
+  }
+}
+.datos p {
+  margin: 0%;
+  font-size: 1rem;
+  /* text-align: left; */
+}
+
+.form {
+  font-size: 20px;
+  background-color: #0D324D;
+  display: flex;
+  justify-content: center;
+}
+
+#form p {
+  text-align: left;
+}
+
+.carro {
+  margin-bottom: 100px;
+}
+
+.imgcard img {
+  width: 300px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .header {
+    padding: 10px 0 10px 0;
+  }
+  .logo {
+    padding-left: 6px;
+  }
+  .imgtext p {
+    display: none;
+  }
+  .redes {
+    display: none;
+  }
+  .p {
+    font-size: small;
+  }
+}
+@media (min-width: 480px) {
+  .logo {
+    padding-left: 1rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+  }
+  .header {
+    margin: 6px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
